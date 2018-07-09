@@ -1,0 +1,124 @@
+<!DOCTYPE html><html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	<!-- CSSファイルの読み込み -->
+	<!-- <title>T Bread</title> -->
+<!-- 	<link rel="stylesheet" href="tbread_2.css">
+	<script src="./jquery-3.3.1.min.js"></script>
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"> -->
+</head>
+
+<body>
+<!-- header -->
+	<header>
+		<div class="title">T Bread<i class="title-icon"></i></div>
+		<div class="subtitle">＜南阿佐ヶ谷＞ こだわり酵母の小さなパン屋</div>
+		<nav>
+			<ul class="navlist">
+				<a href="#news">NEWS</a>
+				<a href="#about">ABOUT</a>
+				<a href="#menu">MENU</a>
+				<a href="#access">ACCESS／CONTACT<span><i class="fas fa-envelope"></i></a>
+			</ul>
+		</nav>
+	</header>
+<!-- main visual -->
+	<div class="mainvisual">
+		<div class="mainvisualimage"></div>
+	<!-- news -->
+		<div id="news">
+			<div class="newstitle">NEWS</div>
+			<ul class="news-item">
+				<% @posts.each do |post| %>
+				<li><%= post.body %></li><% end %>
+			</ul>
+		</div>
+	</div>
+<!-- about -->
+	<div id="about">
+		<div class="aboutpettern"></div>
+		<div class="aboutimage"></div>
+		<div class="aboutitem">
+			<div class="abouttitle">ABOUT TBread</div>
+			<div class="aboutitem-text">
+					新鮮でおいしいパンがある町ってなんだか温かい。
+					<br>パンが大好きな店主が作る、こだわり天然酵母の手作りパンは
+					<br>世界自然遺産 白神山地で採取された”白神こだま酵母”のみを使用した、
+					<br>しっとり柔らかな食感と、香ばしく華やかな匂いが特徴です。
+					<br><span>「 TBread 買ってきたよ」</span>
+					<br>そんな声が、家族、友だち、この町を繋げる言葉になりますように。
+			</div>
+		</div>
+	</div>
+<!-- menu -->
+	<div id="menu">
+		<div class="menucontent">
+			<div class="menuitem1"></div>
+			<div class="menuitem2"></div>
+			<div class="menuitem3"></div>
+			<div class="menuitem4"></div>
+			<div class="menucontent-title">MENU</div>
+			<div class="menucontent-text">定番の食パンやフランスパン、菓子パンに惣菜パン。サンドイッチや季節限定パンも含めて常時20種類ほど販売しております。
+			<span><br>※ 店主が毎日手作りでご用意しておりますので、売り切れの場合もございます。ご理解の程よろしくお願いします。</br></span></div>
+			<div class="menucontent-image">
+				<div class="menuimagebox"></div>
+				<div class="menuimagebox"></div>
+				<div class="menuimagebox"></div>
+				<div class="menuimagebox"></div>
+				<div class="menuimagebox"></div>
+				<div class="menuimagebox"></div>
+				<div class="menuimagebox"></div>
+				<div class="menuimagebox"></div>
+				<div class="menuimagebox"></div>
+				<div class="menuimagebox"></div>
+				<div class="menuimagebox"></div>
+				<div class="menuimagebox"></div>
+			</div>
+		</div>
+	</div>
+<!-- access -->
+	<div id="access">
+		<div class="accesstitle"> ACCESS & CONTACT</div>
+		<div class="accesscontent">
+			<div class="accessitem">
+				<!-- 住所 -->
+				<div class="accessitem-box">
+					<div class="accessitem-icon">
+						<i class="fas fa-map-marker-alt"></i>
+					</div>
+					<li class="accessitem-text">東京都杉並区成田東4-9-9
+						<br><a class="adresslink" href="https://www.google.com/maps/place/%E3%83%99%E3%83%BC%E3%82%AB%E3%83%AA%E3%83%BC+T+Bread/@35.6987049,139.6350242,16.06z/data=!4m8!1m2!2m1!1z44OZ44O844Kr44Oq44O844CAdGJyZWFk!3m4!1s0x0:0xdaf67d3062ee24f6!8m2!3d35.6983794!4d139.6339425?hl=ja">Googlemapで開く</a></br>
+					</li>
+				</div>
+				<!-- 交通手段 -->
+				<div class="accessitem-box">					<div class="accessitem-icon">
+						<i class="fas fa-subway"></i>
+					</div>
+					<li class="accessitem-text">丸ノ内線 南阿佐ヶ谷駅徒歩3分<br>JR阿佐ヶ谷駅徒歩12分</li>
+				</div>
+				<!-- 営業時間 -->
+				<div class="accessitem-box">
+					<div class="accessitem-icon">
+						<i class="far fa-clock"></i>
+					</div>
+					<li class="accessitem-text">営業 水曜〜土曜 11:00-18:00</li>
+				</div>
+				<!-- 問い合わせ -->
+				<div class="accessitem-box">
+					<div class="accessitem-icon">
+						<i class="fas fa-envelope"></i>
+					</div>
+					<a class="accessitem-text" href="mailto:12345678@gmail.com">12345678@gmail.com</a>
+				</div>
+			</div>
+			<div class="accessmap"></div>
+		</div>
+	</div>
+<!-- footer -->
+	<footer>◆◆ copyright(C) T Bread all rights reserved ◆<a><%= link_to '◆','/posts/new' %></a>
+	</footer>
+
+</body>
+
