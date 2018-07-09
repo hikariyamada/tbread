@@ -1,0 +1,361 @@
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #3c3d3d;
+}
+a {
+	text-decoration: none;
+}
+
+body {
+	width: 90%;
+	margin: 0 auto;
+	background-color: #f9f5f5;
+}
+/*header*/
+header {
+	/*position: relative;*/
+	padding: 20px 0px;
+	/*margin: 0 auto;*/
+}
+.title {
+	font-size: 25px;
+	font-family: 'TsukuBRdGothic-Regular';
+	height: 30px;
+	/*letter-spacing: 0.15em;*/
+}
+/*色変更する必要あり*/
+.title-icon {
+	content: url(icon/streetlight2.png);
+	height: 30px;
+	width: auto;
+	padding: 0 5px;
+
+}
+
+.subtitle {
+	font-size: 12px;
+	/*margin: 0 50px 10px 0;*/
+	font-family: 'TsukuARdGothic-Regular';
+	display: inline-block;
+	float: left;
+	line-height: 26px
+}
+nav {
+	text-align: right;
+}
+.navlist a{
+	font-size: 12px;
+	font-family: 'TsukuBRdGothic-Regular';
+	margin: 0 5px;
+}
+.navlist i{
+	font-size: 13px;
+	margin-left: 5px;
+}
+
+.mainvisual {
+	background-color: #CCC;
+	height: 400px;
+	margin: 0 auto;
+	position: relative;
+	background-image: url(mvimg/077A7698.jpg);
+	background-size: cover;
+	background-position: top;
+}
+
+#news {
+	background-color: rgba(249,245,245,0.8);
+	/*padding: 5px 0 0 50px;*/
+	height: 150px;
+	position: absolute;
+	top: 250px;
+	left: 0;
+}
+.newstitle {
+	font-size: 17px;
+	background-color: #fff;
+	text-align: center;
+	height: 25px;
+	width: 70px;
+	border-top: dashed 1px;
+	border-bottom: dashed 1px;
+	font-family: 'TsukuBRdGothic-Regular';
+	margin: 10px;
+}
+.news-item {
+	/*padding-top: 5px;*/
+}
+.news-item li{
+	/*display: inline-block;*/
+	list-style: none;
+	font-size: 12px;
+	padding: 4px 0;
+	margin: 0 30px;
+}
+#about {
+	height: 700px;
+	/*background-color: #FFCCCC;*/
+	position: relative;
+}
+.aboutimage {
+	background-image: url(aboutimage/077A7722.jpg);
+	height: 500px;
+	width: 300px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 100px;
+	left: 0;
+}
+.aboutpettern {
+	background-image: linear-gradient(
+	90deg,
+    #f6f0ed 25%,
+    #fff 25%, #fff 50%,
+    #f6f0ed 50%, #f6f0ed 75%,
+    #fff 75%, #fff);
+    background-size: 48px 400px;
+    height: 600px;
+    width: 80%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+	transform: translate(0%, -50%);
+}
+.abouttitle {
+	font-size: 17px;
+	background-color: #f9f5f5;
+	height: 25px;
+	width: 150px;
+	text-align: center;
+	border-top: dashed 1px;
+	border-bottom: dashed 1px;
+	font-family: 'TsukuBRdGothic-Regular';
+	margin: 5px;
+}
+.aboutitem {
+	height: 300px;
+	width: 600px;
+	padding: 20px 70px;
+	background-color: rgba(250,250,250,0.8);
+	position: absolute;
+	top: 50%;
+	right: 0%;
+	transform: translate(0%, -50%);
+	/*box-shadow: 2px 2px 4px #3c3d3d;*/
+	border-radius: 5px;
+}
+.aboutitem-text {
+	font-size: 12px;
+	line-height: 30px;
+	font-family: 'TsukuARdGothic-Regular';
+	margin-top: 25px;
+	letter-spacing: 0.1em;
+}
+.aboutitem-text span {
+	line-height: 40px;
+}
+.aboutitem-icon {
+	background-image: url(abouticon.png);
+	height: 150px;
+	width: 100px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-left: 10px;
+	margin-top: 100px;
+}
+
+#menu {
+	/*height: auto;*/
+	height: 100%;
+	width: 700px;
+	margin: 20px auto;
+	text-align: center;
+}
+.menucontent {
+	position: relative;
+	padding-bottom: 30px;
+}
+.menuitem1 {
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	content: url(icon/wheatleft.png);
+	height: 60px;
+	width: auto;
+	transform: rotate(90deg);
+}
+.menuitem2 {
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	content: url(icon/wheatright.png);
+	height: 60px;
+	width: auto;
+	transform: rotate(-90deg);
+}
+.menuitem3 {
+	position: absolute;
+	bottom: 0px;
+	left: -20px;
+	content: url(icon/wheatleft.png);
+	height: 60px;
+	width: auto;
+}
+.menuitem4 {
+	position: absolute;
+	bottom: 0px;
+	right: -20px;
+	content: url(icon/wheatright.png);
+	height: 60px;
+	width: auto;
+}
+.menucontent-title {
+	font-size: 17px;
+	background-color: #fff;
+	height: 25px;
+	width: 70px;
+	text-align: center;
+	border-top: dashed 1px;
+	border-bottom: dashed 1px;
+	font-family: 'TsukuBRdGothic-Regular';
+	margin: 0 auto;
+}
+.menucontent-text {
+	font-size: 11px;
+	margin: 20px;
+	font-family: 'TsukuARdGothic-Regular';
+	/*margin: 5px 0;*/
+}
+.menucontent-text span{
+	font-size: 7px;
+}
+.menucontent-image {
+	height: 100%;
+	width: 100%;
+	padding-top: 20px
+}
+.menuimagebox {
+	display: inline-flex;
+	height: 150px;
+	width: 150px;
+	background-size: contain;
+	background-position: center;
+	margin: 0px 30px 30px 30px;
+}
+.menuimagebox:nth-child(1) {
+	background-image: url(menuimg/menu1.png);
+}
+.menuimagebox:nth-child(2) {
+	background-image: url(menuimg/menu2.png);
+}
+.menuimagebox:nth-child(3) {
+	background-image: url(menuimg/menu3.png);
+}
+.menuimagebox:nth-child(4) {
+	background-image: url(menuimg/menu4.png);
+}
+.menuimagebox:nth-child(5) {
+	background-image: url(menuimg/menu5.png);
+}
+.menuimagebox:nth-child(6) {
+	background-image: url(menuimg/menu6.png);
+}
+.menuimagebox:nth-child(7) {
+	background-image: url(menuimg/menu7.png);
+}
+.menuimagebox:nth-child(8) {
+	background-image: url(menuimg/menu8.png);
+}
+.menuimagebox:nth-child(9) {
+	background-image: url(menuimg/menu9.png);
+}
+.menuimagebox:nth-child(10) {
+	background-image: url(menuimg/menu10.png);
+}
+.menuimagebox:nth-child(11) {
+	background-image: url(menuimg/menu11.png);
+}
+.menuimagebox:nth-child(12) {
+	background-image: url(menuimg/menu12.png);
+}
+
+#access {
+	height: 400px;
+	background-color: #efe0ce;
+	position: relative;
+	padding: 30px 0;
+}
+.accesstitle {
+	font-size: 17px;
+	background-color: #fff;
+	height: 25px;
+	width: 300px;
+	text-align: center;
+	border-top: dashed 1px;
+	border-bottom: dashed 1px;
+	font-family: 'TsukuBRdGothic-Regular';
+	margin: 0 auto;
+}
+.accesscontent {
+	position: absolute;
+	top: 110px;
+	left: 50%;
+	/*ズレを補正する*/
+	transform: translate(-50%, 0);
+	display: flex;
+}
+.accessitem {
+	padding: 0px  10px;
+	width: 250px;
+}
+.accessitem-box {
+	display: flex;
+	padding: 10px 0;
+}
+.accessitem-icon i {
+	font-size: 20px;
+	width: 30px;
+}
+.accessitem-text {
+	list-style: none;
+	margin-left: 10px;
+	font-size: 13px;
+	font-family: 'TsukuARdGothic-Regular';
+}
+.adresslink {
+	font-size: 5px;
+}
+.accessmap {
+	background-image: url(mapimg/map3.png);
+	height: 200px;
+	width: 300px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+footer {
+	font-size: 10px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+
+/*裏ページ*/
+.post-date {
+	display: inline-block;
+	margin-right: 12px;
+}
+.action {
+	margin-bottom: 10px;
+}
+.newpage {
+ font-size: 12px;
+  color: #6c6b6b;
+}
+.botton {
+	border: solid, 1px;
+}

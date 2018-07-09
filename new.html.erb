@@ -1,0 +1,34 @@
+<body>
+<br>
+<p>【お知らせ新規投稿】</p>
+<br>
+<%= form_for(@post) do |f| %>
+
+    <h4>本文</h4>
+    <%= f.text_area :body %>
+
+    <%= f.submit '投稿' %>
+
+<% end %>
+<br>
+<a><%= link_to '＜HOME＞', '/home/top' %></a>
+<br>
+<br>
+<p>【お知らせ投稿一覧】</p>
+<br>
+<div class="newpage">
+	<!-- 定義はアクションで -->
+	<!-- 条件 -->
+		<% @posts.each do |post| %>
+		 <div class="post-index-item">
+		 更新日：<p class="post-date"><%= post.created_at %></p>
+		 本文：<%= post.body %>
+		 </div>
+         <div class="action">
+         <%= link_to '編集', edit_post_path(post.id) %>
+         |
+         <%= link_to '削除', destroy_post_path(post.id), method: :delete, "data-confirm" => "削除してよろしいですか?" %>
+     	</div>
+		<% end %>
+</div>
+</body>
